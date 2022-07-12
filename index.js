@@ -4,14 +4,14 @@ const cors = require("cors");
 const port = process.env.PORT || 5000;
 const mongoose = require("mongoose");
 const app = express();
-const workoutRoutes = require("./routes/workouts");
 //Router
+const workoutRoutes = require("./routes/workouts");
 
 // middleware
 app.use(cors());
 app.use(express.json());
 app.use((req, res, next) => {
-  console.log(req.path, req.method);
+  // console.log(req.path, req.method);
   next();
 });
 
