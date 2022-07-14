@@ -14,7 +14,7 @@ app.use((req, res, next) => {
   next();
 });
 
-// routes
+// All router
 app.use("/api/workouts", workoutRoutes);
 
 mongoose
