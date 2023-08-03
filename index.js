@@ -19,7 +19,7 @@ app.use("/api/workouts", workoutRoutes);
 
 mongoose
   .connect(
-    `mongodb+srv://kabir:Ao0hA9TV8ZperuSD@cluster0.jwdbv.mongodb.net/?retryWrites=true&w=majority`
+    `mongodb+srv://kabir:wSGLjHySWvSuS7L0@cluster0.jwdbv.mongodb.net/?retryWrites=true&w=majority`
   )
   .then(() => {
     app.listen(port, () => {
